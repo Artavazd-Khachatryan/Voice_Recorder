@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RecordSaveActivity">
+
+    <FrameLayout
+        android:translationZ="55dp"
+        android:id="@+id/fl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:padding="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_left" />
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_back"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRecordSoundText"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="33dp"
+            android:text="@string/record_sound"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ToggleButton
+            android:id="@+id/tb_play"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/player_button_bg"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintStart_toStartOf="@+id/tv_record_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_record_name" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_date_and_time"
+            android:layout_marginEnd="16dp"
+            android:text="26.03.2019"
+            app:layout_constraintBottom_toTopOf="@+id/sb_record"
+            app:layout_constraintEnd_toEndOf="@+id/sb_record" />
+
+        <SeekBar
+            android:id="@+id/sb_record"
+            style="@style/SeekBarSound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tb_play"
+            app:layout_constraintTop_toBottomOf="@+id/tb_play" />
+
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_date_and_time"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="00։00:00"
+            app:layout_constraintStart_toStartOf="@+id/sb_record"
+            app:layout_constraintTop_toBottomOf="@+id/sb_record"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/save_image"
+            app:layout_constraintEnd_toEndOf="@+id/tv_date"
+            app:layout_constraintTop_toBottomOf="@+id/sb_record" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

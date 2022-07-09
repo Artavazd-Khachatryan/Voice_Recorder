@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Voice Recorder</string>
+
+
+    <string name="record_sound">Record sound</string>
+    <string name="voice_recorder">Voice Recorder</string>
+    <string name="record_list_is_empty">Record list is empty</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTextRec">#23cce6</color>
+    <color name="colorTimerText">#21e5b6</color>
+    <color name="colorSeekBarProgress">#23cce6</color>
+    <color name="colorRecordSoundText">#2d2d2d</color>
+    <color name="color_app_name">#242424</color>
+    <color name="splash_bg">#f8f8f8</color>
+    <color name="color_date_and_time">#707070</color>
+</resources>
